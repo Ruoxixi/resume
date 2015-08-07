@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0" />
+    <title>20150727-resume</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/20150727_style.css"/>
+</head>
+<body>
+<nav role="menuitem">
+    <ul class="nav">
+        <li><a href="#">my name1</a></li>
+        <li><a href="#">my name22</a></li>
+        <li><a href="#">my name333</a></li>
+        <li><a href="#">my name4444</a></li>
+        <li><a href="#">my name55555</a></li>
+    </ul>
+</nav>
+<div class="resume">
+    <div class="resume_cover resume_wrap">
+        <!--<h1>my name</h1>-->
+        <div class="welcome">
+            <p><span>w</span>elcome to</p>
+            <p>my homepage</p>
+        </div>
+        <div class="sign">
+            <span>吾将上下而求索</span>
+            <span>路漫漫其修远兮</span>
+        </div>
+    </div>
+    <div class="resume_about resume_wrap">
+        <div class="section">
+            <div class="section_con">
+                <h2 class="section_title">便签1</h2>
+                <dl class="item">
+                    <dt class="item_name">类目一：</dt>
+                    <dd class="item_row">描述信息</dd>
+                </dl>
+                <dl class="item">
+                    <dt class="item_name">类目二：</dt>
+                    <dd class="item_row">描述信息</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="resume_inf resume_wrap">
+        <div class="section">
+            <div class="section_con">
+                <h2 class="section_title">便签2</h2>
+                <div class="inf_con">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume_graph resume_wrap">
+        <div class="section">
+            <div class="section_con">
+                <h2 class="section_title">便签3</h2>
+                <ul class="list">
+                    <li>信息一</li>
+                    <li>信息二</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="resume_experience resume_wrap">
+        <div class="section">
+            <div class="section_con">
+                <h2 class="section_title">便签4</h2>
+                <!--经验-->
+            </div>
+        </div>
+        <canvas class="mycanvas_graph" id="mycanvas" width="300" height="300"></canvas>
+    </div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+<script src="js/20150727_js.js"></script>
+<script>
+    var inflist = [
+        {
+            x:"45%",
+            y:"50%",
+            width:"",
+            height:"",
+            title:"语言",
+            content:"Javascript,html(html5),css(css3)",
+            backgroundColor:"#feed01"
+        },
+        {
+            x:"25%",
+            y:"35%",
+            width:"",
+            height:"",
+            title:"应用",
+            content:"pc网站应用，手机HTML5应用，canvas,svg画图",
+            backgroundColor:"#79a301"
+        },
+        {
+            x:"70%",
+            y:"35%",
+            width:"",
+            height:"",
+            title:"框架",
+            content:"jQuery,kissy,bootstrap",
+            backgroundColor:"#bce819"
+        },
+        {
+            x:"25%",
+            y:"60%",
+            width:"",
+            height:"",
+            title:"开发工具",
+            content:"grunt自动化构建工具应用，css预处理器less、sass应用",
+            backgroundColor:"#fff757"
+        },
+        {
+            x:"10%",
+            y:"50%",
+            width:"",
+            height:"",
+            title:"浏览器兼容",
+            content:"IE6~IE11，Firefox，chrome，Opear，Safari",
+            backgroundColor:"#ffffa5"
+        },
+        {
+            x:"2%",
+            y:"20%",
+            width:"",
+            height:"",
+            title:"代码管理工具",
+            content:"svn(集中式版本控制系统),git(分布式版本管理工具)",
+            backgroundColor:"#a5ffff"
+        },
+        {
+            x:"25%",
+            y:"10%",
+            width:"",
+            height:"",
+            title:"模块化",
+            content:"模块以功能为单位的程序设计：widget组件库，后台常用组件库，装修市场模块",
+            backgroundColor:"#49ffff"
+        },
+        {
+            x:"65%",
+            y:"10%",
+            width:"",
+            height:"",
+            title:"性能",
+            content:"遵从w3c标准规范，网站seo优化",
+            backgroundColor:"#01c8df"
+        },
+        {
+            x:"50%",
+            y:"25%",
+            width:"",
+            height:"",
+            title:"开发流程/设计模式",
+            content:"规范与设计，技术支持，性能优化，后期维护",
+            backgroundColor:"#def58d"
+        },
+        {
+            x:"75%",
+            y:"50%",
+            width:"",
+            height:"",
+            title:"交互设计",
+            content:"了解用户需求，设计合理的交互（有用，可用，易用，好用），提升用户体验",
+            backgroundColor:"#febb60"
+        },
+        {
+            x:"65%",
+            y:"62%",
+            width:"",
+            height:"",
+            title:"沟通",
+            content:"合理有效的沟通，可能直接影响最终交付的成果",
+            backgroundColor:"#ff9201"
+        }
+    ];
+    infData(inflist);
+</script>
+</body>
+</html>
